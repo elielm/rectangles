@@ -73,7 +73,9 @@ export class Rectangle extends Shape {
             return true;
         return false;
     };
-
+    /**
+     * @param  {} aRect a rectangle whose points we are going to compare to this object
+     */
     intersectsRectangle(aRect){
         if ((this.contains(aRect.points[0]) || this.contains(aRect.points[1])) &&
             !this.containsRectangle(aRect))
